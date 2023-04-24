@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="logo">
+        <img class="logo-img" src="img/Vector.png" alt="icono Blue Alura">
+        <h1 class="title">Encriptador y Desencriptador de texto</h1>
+      </div>
+
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aquí"
+        ></textarea>
+        
+
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+
+        <div class="botones">
+          
+          <button 
+            class="btn-encriptar" 
+            type="button"   
+            onclick="encriptar()">
+              Encriptar
+          </button> 
+          
+          <input
+            type="button"
+            class="btn-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
+
+          <button
+            class="btn-copiar" 
+            type="button"   
+            id="copy">
+              Copiar
+          </button>
+
+          <input
+            type="button"
+            class="btn-limpiar"
+            value="Limpiar"
+            onclick="limpiar()"
+          />          
+
+        </div>
+      </div>
+    </div>
+
+        <div class="encriptado">
+          <img src="img/muñeco.png" alt="" id="muñeco" />
+          <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <p id="parrafo">
+              Ingresa el texto que deseas encriptar o desencriptar
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="main-footer">
+    
+            <div class="block-3 block-5">
+    
+                <div class="row-down">
+                        <a href="mailto:lunaselene366@gmail.com">&copy Luna Selene - Oracle Next Education Challenge 2023</a>
+                </div>
+    
+    
+                <div class="row">
+    
+                    <div class="col-3 col-s-6">
+                        <a class="contactoImg" href="https://https://github.com/S6l6n6/Challenger"><img src="img/GitHub-Mark-64px.png" width="50" height="50" alt="Icono de Github"></a>
+                    </div>
+                    <div class="col-3 col-s-6">
+                        <a class="contactoImg" href="https://www.linkedin.com/in/luna-selene-a5342a254/"><img src="img/linkedin.png" alt="Icono de Linkedin" width="50"
+                            height="50" ></a>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
